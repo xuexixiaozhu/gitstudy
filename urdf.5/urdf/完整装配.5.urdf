@@ -1,0 +1,917 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="完整装配.5">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.00347929080782284 0.00310775514826022 0.0476624570203305"
+        rpy="0 0 0" />
+      <mass
+        value="0.0871584122310716" />
+      <inertia
+        ixx="4.30840549647855E-05"
+        ixy="-1.46676014937946E-07"
+        ixz="1.19771235574348E-06"
+        iyy="3.24627509176577E-05"
+        iyz="9.51735419601993E-07"
+        izz="1.2766052836938E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://完整装配.5/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://完整装配.5/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="thumb_link0">
+    <inertial>
+      <origin
+        xyz="-0.00960211591283956 0.00758158340766049 -0.0138164153671906"
+        rpy="0 0 0" />
+      <mass
+        value="0.00819705416042993" />
+      <inertia
+        ixx="8.36469740951582E-07"
+        ixy="2.02647971480846E-07"
+        ixz="4.07336302475195E-08"
+        iyy="9.3042549512678E-07"
+        iyz="-1.12390642235695E-07"
+        izz="5.38666149343251E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://完整装配.5/meshes/thumb_link0.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://完整装配.5/meshes/thumb_link0.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="thumb_joint0"
+    type="continuous">
+    <origin
+      xyz="0.0055645 -0.005142 0.058619"
+      rpy="0.17453 0 -3.1416" />
+    <parent
+      link="base_link" />
+    <child
+      link="thumb_link0" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="1.57"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="thumb_link1">
+    <inertial>
+      <origin
+        xyz="-0.00430570249359351 0.00556192975641163 0.0105114243970107"
+        rpy="0 0 0" />
+      <mass
+        value="0.00203385165421672" />
+      <inertia
+        ixx="9.84689110822866E-08"
+        ixy="-1.52772473105926E-10"
+        ixz="3.10475934165436E-08"
+        iyy="1.30703250169912E-07"
+        iyz="3.21701039309009E-10"
+        izz="3.77625871864103E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://完整装配.5/meshes/thumb_link1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://完整装配.5/meshes/thumb_link1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="thumb_joint1"
+    type="continuous">
+    <origin
+      xyz="-0.022678 0.010781 0.007"
+      rpy="0 0 -0.66459" />
+    <parent
+      link="thumb_link0" />
+    <child
+      link="thumb_link1" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="1.57"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="thumb_link2">
+    <inertial>
+      <origin
+        xyz="-0.00261405627014604 0.00473192350650027 0.010127310475057"
+        rpy="0 0 0" />
+      <mass
+        value="0.00110912239847427" />
+      <inertia
+        ixx="4.32349202719249E-08"
+        ixy="-9.69738042877162E-11"
+        ixz="9.07757942120905E-09"
+        iyy="4.85047194168733E-08"
+        iyz="3.67154795253948E-10"
+        izz="1.51174873330978E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://完整装配.5/meshes/thumb_link2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://完整装配.5/meshes/thumb_link2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="thumb_joint2"
+    type="continuous">
+    <origin
+      xyz="-0.0090664 0.0008 0.023298"
+      rpy="0 0 0" />
+    <parent
+      link="thumb_link1" />
+    <child
+      link="thumb_link2" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="0"
+      upper="1.225"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="index_link0">
+    <inertial>
+      <origin
+        xyz="-0.00279917129625196 0.00546448085705155 0.01314340123214"
+        rpy="0 0 0" />
+      <mass
+        value="0.00260864293179679" />
+      <inertia
+        ixx="1.71623367828509E-07"
+        ixy="5.6340786420295E-11"
+        ixz="2.74922071315346E-08"
+        iyy="2.00545456595752E-07"
+        iyz="-2.7948260999266E-10"
+        izz="3.800307345316E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://完整装配.5/meshes/index_link0.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://完整装配.5/meshes/index_link0.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="index_joint0"
+    type="continuous">
+    <origin
+      xyz="-0.0069855 -0.01524 0.091958"
+      rpy="-0.087266 0 -3.1416" />
+    <parent
+      link="base_link" />
+    <child
+      link="index_link0" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="0"
+      upper="1.57"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="index_link1">
+    <inertial>
+      <origin
+        xyz="-0.00195797282321227 0.00548895640148243 0.00818390124472676"
+        rpy="0 0 0" />
+      <mass
+        value="0.00125688613424645" />
+      <inertia
+        ixx="2.79117562685806E-08"
+        ixy="1.71915709849247E-11"
+        ixz="5.21712037219331E-09"
+        iyy="3.90379769847494E-08"
+        iyz="-2.22644709272806E-12"
+        izz="1.48737878310264E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://完整装配.5/meshes/index_link1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://完整装配.5/meshes/index_link1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="index_joint1"
+    type="continuous">
+    <origin
+      xyz="-0.0064147 0 0.027297"
+      rpy="0 0 0" />
+    <parent
+      link="index_link0" />
+    <child
+      link="index_link1" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="0"
+      upper="1.57"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="index_link2">
+    <inertial>
+      <origin
+        xyz="-0.0028877248265317 0.00434792743358713 0.00737459936685731"
+        rpy="0 0 0" />
+      <mass
+        value="0.000659171463588553" />
+      <inertia
+        ixx="1.64927327495234E-08"
+        ixy="1.02688381423712E-10"
+        ixz="3.65634797698705E-09"
+        iyy="1.80910113151696E-08"
+        iyz="-2.70990269251801E-10"
+        izz="7.23516959279369E-09" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://完整装配.5/meshes/index_link2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://完整装配.5/meshes/index_link2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="index_joint2"
+    type="continuous">
+    <origin
+      xyz="-0.0041177 0.0011 0.017523"
+      rpy="0 0 0" />
+    <parent
+      link="index_link1" />
+    <child
+      link="index_link2" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="1.225"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="middle_link0">
+    <inertial>
+      <origin
+        xyz="-0.0027991672200708 0.00546447934976977 0.0131434085054794"
+        rpy="0 0 0" />
+      <mass
+        value="0.00260864335192661" />
+      <inertia
+        ixx="1.71622965307995E-07"
+        ixy="5.63074080366084E-11"
+        ixz="2.74918723359483E-08"
+        iyy="2.00545019008613E-07"
+        iyz="-2.7950065501234E-10"
+        izz="3.80030326939167E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://完整装配.5/meshes/middle_link0.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://完整装配.5/meshes/middle_link0.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="middle_joint0"
+    type="continuous">
+    <origin
+      xyz="-0.0069855 0.0012972 0.0997"
+      rpy="0 0 -3.1416" />
+    <parent
+      link="base_link" />
+    <child
+      link="middle_link0" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="0"
+      upper="1.57"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="middle_link1">
+    <inertial>
+      <origin
+        xyz="-0.00195797291507571 0.00548895620315368 0.00818390141885184"
+        rpy="0 0 0" />
+      <mass
+        value="0.00125688607180107" />
+      <inertia
+        ixx="2.79117571380921E-08"
+        ixy="1.71899074324545E-11"
+        ixz="5.21711844957382E-09"
+        iyy="3.90379766592045E-08"
+        iyz="-2.2261616647141E-12"
+        izz="1.4873786324222E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://完整装配.5/meshes/middle_link1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://完整装配.5/meshes/middle_link1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="middle_joint1"
+    type="continuous">
+    <origin
+      xyz="-0.0064147 0 0.027297"
+      rpy="0 0 0" />
+    <parent
+      link="middle_link0" />
+    <child
+      link="middle_link1" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="0"
+      upper="1.57"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="middle_link2">
+    <inertial>
+      <origin
+        xyz="-0.00288762968072682 0.00434787218126345 0.00737447906050879"
+        rpy="0 0 0" />
+      <mass
+        value="0.000659158195938934" />
+      <inertia
+        ixx="1.6492276398384E-08"
+        ixy="1.02616478692573E-10"
+        ixz="3.65598887890805E-09"
+        iyy="1.80904541408537E-08"
+        iyz="-2.70750988212806E-10"
+        izz="7.23501294287843E-09" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://完整装配.5/meshes/middle_link2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://完整装配.5/meshes/middle_link2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="middle_joint2"
+    type="continuous">
+    <origin
+      xyz="-0.0041177 0.0011 0.017523"
+      rpy="0 0 0" />
+    <parent
+      link="middle_link1" />
+    <child
+      link="middle_link2" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="0"
+      upper="1.225"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="ring_link0">
+    <inertial>
+      <origin
+        xyz="-0.00279917316479356 0.0054644775170749 0.0131434129788751"
+        rpy="0 0 0" />
+      <mass
+        value="0.00260864265847544" />
+      <inertia
+        ixx="1.71623443548449E-07"
+        ixy="5.62676825683882E-11"
+        ixz="2.749182804272E-08"
+        iyy="2.00545358781641E-07"
+        iyz="-2.79488948935906E-10"
+        izz="3.80028952816759E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://完整装配.5/meshes/ring_link0.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://完整装配.5/meshes/ring_link0.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="ring_joint0"
+    type="continuous">
+    <origin
+      xyz="-0.0069855 0.018097 0.094486"
+      rpy="0.087266 0 -3.1416" />
+    <parent
+      link="base_link" />
+    <child
+      link="ring_link0" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="0"
+      upper="1.57"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="ring_link1">
+    <inertial>
+      <origin
+        xyz="-0.00195797270744608 0.00548895634918471 0.00818390139350311"
+        rpy="0 0 0" />
+      <mass
+        value="0.00125688610474581" />
+      <inertia
+        ixx="2.79117519466116E-08"
+        ixy="1.7189378315928E-11"
+        ixz="5.21711742524773E-09"
+        iyy="3.9037973071129E-08"
+        iyz="-2.22597855194929E-12"
+        izz="1.48737877387727E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://完整装配.5/meshes/ring_link1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://完整装配.5/meshes/ring_link1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="ring_joint1"
+    type="continuous">
+    <origin
+      xyz="-0.0064147 0 0.027297"
+      rpy="0 0 0" />
+    <parent
+      link="ring_link0" />
+    <child
+      link="ring_link1" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="0"
+      upper="1.57"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="ring_link2">
+    <inertial>
+      <origin
+        xyz="-0.00288762897194546 0.00434788446477699 0.00737448978176454"
+        rpy="0 0 0" />
+      <mass
+        value="0.000659158909753503" />
+      <inertia
+        ixx="1.64922891504409E-08"
+        ixy="1.0261897596796E-10"
+        ixz="3.65604019751093E-09"
+        iyy="1.80905113571256E-08"
+        iyz="-2.70834911169885E-10"
+        izz="7.23504627124144E-09" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://完整装配.5/meshes/ring_link2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://完整装配.5/meshes/ring_link2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="ring_joint2"
+    type="continuous">
+    <origin
+      xyz="-0.0041177 0.0011 0.017523"
+      rpy="0 0 0" />
+    <parent
+      link="ring_link1" />
+    <child
+      link="ring_link2" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="0"
+      upper="1.225"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="little_link0">
+    <inertial>
+      <origin
+        xyz="-0.00279917458225425 0.00546447628147656 0.013143416603884"
+        rpy="0 0 0" />
+      <mass
+        value="0.00260864243127496" />
+      <inertia
+        ixx="1.71623554463018E-07"
+        ixy="5.62405986264101E-11"
+        ixz="2.74917228530667E-08"
+        iyy="2.00545399742527E-07"
+        iyz="-2.79485184289094E-10"
+        izz="3.80028249834631E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://完整装配.5/meshes/little_link0.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://完整装配.5/meshes/little_link0.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="little_joint0"
+    type="continuous">
+    <origin
+      xyz="-0.0069855 0.032123 0.077041"
+      rpy="0.17453 0 -3.1416" />
+    <parent
+      link="base_link" />
+    <child
+      link="little_link0" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="0"
+      upper="1.57"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="little_link1">
+    <inertial>
+      <origin
+        xyz="-0.00195797144039904 0.00548895624772269 0.00818390160788782"
+        rpy="0 0 0" />
+      <mass
+        value="0.00125688610787941" />
+      <inertia
+        ixx="2.79117282039952E-08"
+        ixy="1.71873845406813E-11"
+        ixz="5.21711109174146E-09"
+        iyy="3.9037956586359E-08"
+        iyz="-2.22569314182918E-12"
+        izz="1.48737930737463E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://完整装配.5/meshes/little_link1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://完整装配.5/meshes/little_link1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="little_joint1"
+    type="continuous">
+    <origin
+      xyz="-0.0064147 0 0.027297"
+      rpy="0 0 0" />
+    <parent
+      link="little_link0" />
+    <child
+      link="little_link1" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="0"
+      upper="1.57"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="little_link2">
+    <inertial>
+      <origin
+        xyz="-0.00288762882308516 0.00434788518770746 0.00737450159830684"
+        rpy="0 0 0" />
+      <mass
+        value="0.000659159699903221" />
+      <inertia
+        ixx="1.64923495297491E-08"
+        ixy="1.02618691737652E-10"
+        ixz="3.65604842894566E-09"
+        iyy="1.80905700694119E-08"
+        iyz="-2.70841178765038E-10"
+        izz="7.23504443706668E-09" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://完整装配.5/meshes/little_link2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://完整装配.5/meshes/little_link2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="little_joint2"
+    type="continuous">
+    <origin
+      xyz="-0.0041177 0.0011 0.017523"
+      rpy="0 0 0" />
+    <parent
+      link="little_link1" />
+    <child
+      link="little_link2" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="0"
+      upper="1.225"
+      effort="0"
+      velocity="0" />
+  </joint>
+</robot>
